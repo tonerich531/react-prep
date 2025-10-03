@@ -30,7 +30,8 @@ const Post = () => {
     </div>
   </div>    
     {
-    loading ? (
+    loading ? 
+        new Array(10).fill(0).map((element, ) => (
         <div className="post">
             <div className="post__title">
             <div className="post__title--skeleton"></div>
@@ -39,6 +40,7 @@ const Post = () => {
             <p className="post__body--skeleton"></p>
             </div>
         </div>)
+        )
         : (
             posts.map((post) => (
             <div className="post">
